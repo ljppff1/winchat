@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >  
+    
+    <include layout="@layout/head"/>
+    
+   <RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+       
+       >
+     <com.ty.winchat.widget.VideoView
+        android:id="@+id/video_chat_myview"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        />
+     <com.ty.winchat.widget.VideoView
+        android:id="@+id/video_chat_myview1"
+        android:layout_width="100dip"
+        android:layout_toRightOf="@id/video_chat_myview"
+        android:layout_height="100dip"
+        />
+     </RelativeLayout>
+      <SurfaceView 
+         android:id="@+id/video_chat_preview"
+         android:layout_marginTop="20dip"
+         android:layout_width="100dip"
+         android:layout_height="100dip"
+         android:layout_gravity="right"
+         android:layout_margin="10dip"
+        />
+  
+</LinearLayout>
